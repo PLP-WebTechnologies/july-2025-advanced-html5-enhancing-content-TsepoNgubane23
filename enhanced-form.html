@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+
+<header>
+  <h1>Enhanced HTML5 Form</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Instructions</h2>
+    <ul>
+      <li>Fill out all required fields.</li>
+      <li>Use valid email and phone formats.</li>
+      <li>Submit when done.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form method="post" action="#" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Tsepo Ann" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="tsepo@example.com" required autocomplete="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="0605122546" pattern="[0-9]{10}" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Choose--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <label>
+          <input type="checkbox" name="terms" required> I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Details</legend>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" value="South Africa" readonly>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" autocomplete="address-level2">
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Pricing Table</h2>
+    <table border="1">
+      <caption>Available Plans</caption>
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Benefits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>Free</td>
+          <td>Limited Access</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>R100/mo</td>
+          <td>Full Features</td>
+        </tr>
+        <tr>
+          <td>Enterprise</td>
+          <td>R150/mo</td>
+          <td>Team Access, Reports</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Content</h2>
+
+    <article>
+      <h3>Intro Video</h3>
+      <video controls width="320">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </article>
+
+    <article>
+      <h3>Location Map</h3>
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.5533474100726!2d31.072330415116784!3d-29.726225381973026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef707f6e0a518b3%3A0x8c9a6c285a378e80!2sUmhlanga%20Ridge%2C%20Umhlanga%2C%204318!5e0!3m2!1sen!2sza!4v1691000000000"
+  width="320" height="200" allowfullscreen="" loading="lazy">
+</iframe>
+
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Tsepo Ngubane | HTML5 Assignment</p>
+</footer>
+
+</body>
+</html>
